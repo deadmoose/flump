@@ -26,3 +26,16 @@ install:
 
 script:
   - true
+
+after_success:
+  - wget "https://raw.github.com/andreafabrizi/Dropbox-Uploader/master/dropbox_uploader.sh"
+  - chmod +x dropbox_uploader.sh
+  - ./dropbox_uploader -f /dev/null upload exporter/dist $TRAVIS_BUILD_NUMBER
+
+env:
+  global:
+  - secure: LrFhwUYgTDD16XIRyrX11JTvUm6+gADdLuZK4nuRhu9MxBblfGM3VIUyrvk7nnEYngvQRsLsnkKZ7cRFllP+M/BBIFStBJOr6feqI5XmbXrE5J/4mQWLt63oNRq0d3h4DAYZp05v3pU1QZm41jHU0m9W9h4g9DHXcVzjVY18Huw=
+  - secure: AOMVFSnzicnAum9tfMQGOUNO6hDCb/NLc1offOgmDzpKcf+iiZSzsKnseuMQ9Iok+HwgLUuSgwe5U+BAlUhQmYOXiUA9qUv65LjPw6N24IsmWLKIWnFPRmRblZgrzggs8rJDdvDGjMaLeTQUGlpV5tCpNRM6xToWNttG/MOsOpI=
+  - secure: RxoCVQi0Wd3bZHKnjo/vEMcXv6RAxgufVMHtix5by0Q28jNE0YftI90aId9rDt/kKbLnphXaCHbTyYBL3brW2TK6ldwa6DAEOzWSZ2FaN4fLaxv9z79T/LcW5PBoSB2bFjIDwdpslLNK6/6GVmaaXILHYj8q1WpUg6zVrxh/wCk=
+  - secure: WNUfA2MorT6k29JwiWpT/uEcvr1h19Q1aFMxjoQed+biBbDIiB3ipNIn5IOlNoPD/VOV1xJDiR/14Vfc3pltzhq21YIOjPqcz7qndQ2Sl7fVY8y8CXOE3xYon4JZfp9zBw6p2yw/ER5osVx61HDMnkFTpiC5Osw2cbSaPeFd6Ms=
+  - secure: Qd6ULR2Gmvyuuo/k71jNVVLdv3FRJYrkX982VDx2dn6c2n6oachIEPSm1RcuKd2tBGjflg7waDFiW1ARBm7mwH7zHL66dLVan7QSf9hg8fqwMJPl/tnfi3C0mYiVZXjKSstY7j1of+RxHFk/+ZIGDuNYiKA5sQBl+z+1SwPUugk=
