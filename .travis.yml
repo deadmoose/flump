@@ -1,4 +1,4 @@
-language: objective-c
+language: java
 
 before_install:
   - mkdir flex air
