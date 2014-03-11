@@ -2,15 +2,15 @@ language: java
 
 before_install:
   - mkdir $FLEX_HOME
-  - cd $FLEX_HOME && \
-      wget http://download.macromedia.com/pub/flex/sdk/flex_sdk_4.6.zip && \
+  - cd $FLEX_HOME &&
+      wget http://download.macromedia.com/pub/flex/sdk/flex_sdk_4.6.zip &&
       unzip flex_sdk_4.6.zip
-  - cd $FLEX_HOME && \
-      wget http://airdownload.adobe.com/air/mac/download/latest/AdobeAIRSDK.tbz2 && \
+  - cd $FLEX_HOME &&
+      wget http://airdownload.adobe.com/air/mac/download/latest/AdobeAIRSDK.tbz2 &&
       tar xjf AdobeAIRSDK.tbz2
   - mkdir $AIR_HOME
-  - cd $AIR_HOME && \
-      wget http://airdownload.adobe.com/air/mac/download/latest/AIRSDK_Compiler.tbz2 && \
+  - cd $AIR_HOME &&
+      wget http://airdownload.adobe.com/air/mac/download/latest/AIRSDK_Compiler.tbz2 &&
       tar xjf AIRSDK_Compiler.tbz2
 
 install:
