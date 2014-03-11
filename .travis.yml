@@ -30,7 +30,7 @@ script:
 after_success:
   - wget "https://raw.github.com/andreafabrizi/Dropbox-Uploader/master/dropbox_uploader.sh"
   - chmod +x dropbox_uploader.sh
-  - ./dropbox_uploader.sh -f /dev/null upload exporter/dist $TRAVIS_BUILD_NUMBER
+  - ./dropbox_uploader.sh -f /dev/null upload exporter/dist $TRAVIS_COMMIT
 
 env:
   global:
