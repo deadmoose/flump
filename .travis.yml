@@ -26,7 +26,7 @@ after_success:
 env:
   global:
   - "AIR_HOME=$HOME/air"
-  - "FLEX_HOME=$HOM/flex"
+  - "FLEX_HOME=$HOME/flex"
   - secure: LrFhwUYgTDD16XIRyrX11JTvUm6+gADdLuZK4nuRhu9MxBblfGM3VIUyrvk7nnEYngvQRsLsnkKZ7cRFllP+M/BBIFStBJOr6feqI5XmbXrE5J/4mQWLt63oNRq0d3h4DAYZp05v3pU1QZm41jHU0m9W9h4g9DHXcVzjVY18Huw=
   - secure: AOMVFSnzicnAum9tfMQGOUNO6hDCb/NLc1offOgmDzpKcf+iiZSzsKnseuMQ9Iok+HwgLUuSgwe5U+BAlUhQmYOXiUA9qUv65LjPw6N24IsmWLKIWnFPRmRblZgrzggs8rJDdvDGjMaLeTQUGlpV5tCpNRM6xToWNttG/MOsOpI=
   - secure: RxoCVQi0Wd3bZHKnjo/vEMcXv6RAxgufVMHtix5by0Q28jNE0YftI90aId9rDt/kKbLnphXaCHbTyYBL3brW2TK6ldwa6DAEOzWSZ2FaN4fLaxv9z79T/LcW5PBoSB2bFjIDwdpslLNK6/6GVmaaXILHYj8q1WpUg6zVrxh/wCk=
