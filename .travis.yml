@@ -22,6 +22,7 @@ install:
   - cd ..
   - cd demo
   - ant -Dairsdk.dir=../air
+  - cd ..
 
 script:
   - true
