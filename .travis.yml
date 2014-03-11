@@ -1,0 +1,26 @@
+language: java
+
+before_install:
+  - mkdir flex air
+  - cd flex
+  - wget http://download.macromedia.com/pub/flex/sdk/flex_sdk_4.6.zip
+  - wget http://airdownload.adobe.com/air/mac/download/latest/AdobeAIRSDK.tbz2
+  - unzip flex_sdk_4.6.zip
+  - tar xjf AdobeAIRSDK.tbz2
+  - cd ..
+  - cd air
+  - wget http://airdownload.adobe.com/air/mac/download/latest/AIRSDK_Compiler.tbz2
+  - tar xjf AIRSDK_Compiler.tbz2
+  - cd ..
+
+install:
+  - cd runtime
+  - ant -Dairsdk.dir=../air maven-deploy
+  - cd ..
+  - cd exporter
+  - ant -Dflexsdk.dir=../flex swf
+  - cd ..
+  - cd demo
+  - ant -Dairsdk.dir=../air
+
+script: # Nothing to do here
